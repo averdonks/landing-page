@@ -2,20 +2,50 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
     list-style: none;
     margin-bottom: none;
+    display: flex;
+    gap: 32px;
 }
 
 a {
     text-decoration: none;
+}
+
+/* .header,
+.hero,
+.information,
+.quote,
+.call-to-action,
+.footer {
+    max-width: 1100px;
+    margin: 0px auto;
+} */
+
+.header {
+    height: 60px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .header,
@@ -45,10 +75,22 @@ a {
     color: #E5E7EB;
 }
 
+.hero .container {
+    display: flex;
+    padding: 100px 30px;
+    gap: 64px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
 .hero-header {
     font-size: 48px;
     font-weight: 900;
-    margin-top: 0px;
 }
 
 .logo,
@@ -71,9 +113,12 @@ a {
 }
 
 .hero-image {
-    width: 450px;
-    height: 200px;
+    width: 1000px;
+    height: 250px;
     background-color: #6F747C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .information-header {
@@ -107,11 +152,6 @@ a {
 
 .quote-author {
     font-weight: 500;
-    margin-bottom: 0px;
-}
-
-.call-to-action-header {
-    margin-top: 0px;
 }
 
 .call-to-action .button {
