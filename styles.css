@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header,
+.hero,
+.footer {
+    background-color: #1F2937;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-link,
+.hero-text,
+.hero-image,
+.button,
+.quote-author {
+    font-size: 18px;
+}
+
+.header-link,
+.hero-text,
+.hero-image,
+.call-to-action-text,
+.footer {
+    color: #E5E7EB;
+}
+
+.hero-header {
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 0px;
+}
+
+.logo,
+.hero-header,
+.button,
+.call-to-action-header {
+    color: #F9FAF8;
+}
+
+.button {
+    padding: 6px 28px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+}
+
+.button,
+.call-to-action {
+    background-color: #3882F6;
+}
+
+.hero-image {
+    width: 450px;
+    height: 200px;
+    background-color: #6F747C;
+}
+
+.information-header {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.information-header,
+.information-text,
+.quote-text,
+.quote-author {
+    color: #1F2937;
+}
+
+.information-image {
+    width: 180px;
+    height: 180px;
+    border: solid #3882F6;
+    border-radius: 8px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote-author {
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.call-to-action-header {
+    margin-top: 0px;
+}
+
+.call-to-action .button {
+    border: solid 2px;
+}
+
