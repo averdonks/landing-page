@@ -21,16 +21,6 @@ a {
     text-decoration: none;
 }
 
-/* .header,
-.hero,
-.information,
-.quote,
-.call-to-action,
-.footer {
-    max-width: 1100px;
-    margin: 0px auto;
-} */
-
 .header {
     height: 60px;
 }
@@ -46,6 +36,7 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    /*investigate*/
 }
 
 .header,
@@ -62,7 +53,6 @@ a {
 .header-link,
 .hero-text,
 .hero-image,
-.button,
 .quote-author {
     font-size: 18px;
 }
@@ -77,11 +67,12 @@ a {
 
 .hero .container {
     display: flex;
-    padding: 100px 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     gap: 64px;
 }
 
-.divider {
+.hero .divider {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -104,7 +95,8 @@ a {
     padding: 6px 28px;
     border-radius: 8px;
     border: none;
-    font-weight: 500;
+    font-weight: 550;
+    font-size: 16px;
 }
 
 .button,
@@ -121,9 +113,34 @@ a {
     align-items: center;
 }
 
+.information .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
 .information-header {
     font-size: 36px;
     font-weight: 900;
+    padding: 48px 0px;
+    text-align: center;
+}
+
+.information .divider {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.info {
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
 }
 
 .information-header,
@@ -134,10 +151,18 @@ a {
 }
 
 .information-image {
-    width: 180px;
-    height: 180px;
-    border: solid #3882F6;
-    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    border: solid #3882F6 4px;
+    border-radius: 12px;
+}
+
+.quote .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px;
+    gap: 16px;
 }
 
 .quote {
@@ -151,10 +176,37 @@ a {
 }
 
 .quote-author {
-    font-weight: 500;
+    font-weight: 800;
+    align-self: flex-end;
+    padding-right: 32px;
+}
+
+.call-to-action {
+    display: flex;
+    padding: 50px;
+    border-radius: 8px;
+    margin: 100px auto;
+    max-width: 1100px;
+}
+
+.call-to-action .box {
+    display: flex;
+    gap: 200px;
+}
+
+.call-to-action .divider {
+    display: flex;
+    flex-direction: column;
 }
 
 .call-to-action .button {
+    margin-left: auto;
     border: solid 2px;
 }
 
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px;
+}
